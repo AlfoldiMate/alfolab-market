@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-plugin-manifest.json",
+  "name": "research-this",
+  "displayName": "Research This",
+  "version": "0.2.0",
+  "description": "Research any topic — scientific, mathematical, economic, political, historical. /research-this builds a cited knowledge collection; /overview-this gives a fast grounded overview with a peek at the deep parts.",
+  "author": {
+    "name": "AlfoldiMate",
+    "email": "mate.alfoldi@outlook.com"
+  },
+  "homepage": "https://github.com/AlfoldiMate/alfolab-market",
+  "repository": "https://github.com/AlfoldiMate/alfolab-market",
+  "license": "MIT",
+  "keywords": ["research", "knowledge", "deep-research", "synthesis", "citations", "report", "literature", "explainer"]
+}

@@ -17,6 +17,7 @@ Then install a plugin:
 
 ```bash
 claude plugin install cli-autocomplete@alfolab-market
+claude plugin install research-this@alfolab-market
 ```
 
 Or browse interactively with `/plugin`.
@@ -46,6 +47,26 @@ CLI by introspecting its `--help`. Two skills:
 
 Requires zsh with `compinit` (and `fzf-tab` for the grouped sections to render
 as a fuzzy-filtered menu).
+
+### `research-this`
+
+Domain-agnostic research, from a quick orientation to a full **knowledge
+collection** — cited markdown a human can read to actually understand a topic,
+not just a link dump. Two skills, same source discipline at different depths:
+
+| Skill | What it does |
+|---|---|
+| `/research-this <topic or question>` | Scope the question, fan out angled web searches, read primary/authoritative sources, verify load-bearing claims adversarially, then synthesize a structured collection (overview → deep-dive sections → glossary → key data → open questions → annotated sources). |
+| `/overview-this <topic or question>` | The lightweight companion: a fast, grounded overview — short plain-language intro + a brief peek at one or two of the deeper/interesting parts — in one concise doc you can read in minutes. Points to `/research-this` when you want the full treatment. |
+
+**Highlights**
+- Works across **science, math, economics, politics, history, tech** — the rigor
+  is fixed; the collection's shape adapts to the domain.
+- Depth tiers: *brief* (one explainer), *standard* (small collection), *deep*
+  (full collection with parallel per-subtopic research).
+- Sources are non-negotiable: real URLs, primary-where-possible, cited inline,
+  with contested/uncertain claims flagged — no fabricated references.
+- Writes to `~/Knowledge/research/<slug>/` by default, built to be read top-to-bottom.
 
 ## License
 
