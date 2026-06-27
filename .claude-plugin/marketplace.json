@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-marketplace.json",
+  "name": "alfolab-market",
+  "owner": {
+    "name": "AlfoldiMate",
+    "email": "mate.alfoldi@outlook.com"
+  },
+  "description": "AlfoLab's Claude Code marketplace — small, sharp developer plugins.",
+  "plugins": [
+    {
+      "name": "cli-autocomplete",
+      "source": "./plugins/cli-autocomplete",
+      "description": "Generate and refresh rich, git-style categorized zsh tab-completions for any CLI by introspecting its --help.",
+      "version": "0.1.0",
+      "author": { "name": "AlfoldiMate" },
+      "keywords": ["zsh", "completion", "autocomplete", "shell", "fpath", "fzf-tab"],
+      "category": "developer-tools"
+    }
+  ]
+}
